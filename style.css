@@ -1,5 +1,5 @@
 nav{
-    background-color: thistle;
+    background-color: darkgray;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -7,17 +7,10 @@ nav{
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 35px;
-  
-}
-#papai button{
-    position: absolute;
-    right: 25px;
-    top: 20px;
 }
 body{
     margin: 2.5px;
     background-color: darkcyan;
-   
 }
 main{
     margin-top: 100px;
@@ -26,18 +19,5 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 15%;
-}
-#caixa{
-    margin-bottom: 35px;
-    display: flex;
-    flex-direction: column;     
-
-}
-.content{
-    display: flex;
-    justify-content: center;
-}
-button{
-    margin-top: 25px;
+    
 }
