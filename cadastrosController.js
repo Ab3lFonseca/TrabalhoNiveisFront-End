@@ -1,6 +1,19 @@
-import "./indexController";
- function aparecerValores(){
+import { infoCadN, infoCadE, infoCadS } from './indexController.js';
+
+function aparecerValores() {
     let mainContent = document.getElementById("mainHTML");
+    if (!mainContent) {
+        console.error("Elemento com ID 'mainHTML' não encontrado.");
+        return;
+    }
+
+    // Verifica se os arrays estão definidos e possuem o mesmo tamanho
+    if (!infoCadN || !infoCadE || !infoCadS || 
+        infoCadN.length !== infoCadE.length || infoCadN.length !== infoCadS.length) {
+        console.error("Os arrays dinâmicos não estão carregados corretamente ou possuem tamanhos diferentes.");
+        return;
+    }
+
     for (let i = 0; i < infoCadN.length; i++) {
         let infoDiv = document.createElement("div");
         infoDiv.classList.add("info");
@@ -19,5 +32,9 @@ import "./indexController";
 
         mainContent.appendChild(infoDiv);
     }
- };
- aparecerValores();
+}
+
+// Aguarda os dados dinâmicos estarem disponíveis antes de chamar a função
+document.addEventListener("DOMContentLoaded", () => {
+    aparecerValores();
+});
