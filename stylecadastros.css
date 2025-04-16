@@ -1,0 +1,73 @@
+/* Estilo para a navegação */
+nav {
+    background-color: thistle;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o corpo da página */
+body {
+    margin: 0;
+    background-color: darkcyan;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para o main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilo para a lista de cadastros */
+#listaCadastros {
+    list-style-type: none;
+    padding: 0;
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#listaCadastros li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+#listaCadastros li:last-child {
+    border-bottom: none;
+}
+
+/* Estilo para os itens da lista */
+#listaCadastros li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#listaCadastros li span {
+    font-weight: bold;
+}
+/* Estilo para o botão de retorno */
+#botaoRetorno {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: thistle;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+#botaoRetorno:hover {
+    background-color: plum;
+}
